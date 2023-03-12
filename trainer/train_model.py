@@ -23,7 +23,7 @@ def get_config(file_path):
             all_char = ''.join(df['words'])
             characters += ''.join(set(all_char))
         characters = sorted(set(characters))
-        opt.character= ''.join(characters)
+        opt.character = ''.join(characters)
     else:
         opt.character = opt.number + opt.symbol + opt.lang_char
     os.makedirs(f'./saved_models/test', exist_ok=True)

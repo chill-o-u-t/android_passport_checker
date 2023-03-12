@@ -156,8 +156,6 @@ def get_recognizer(recog_network, network_params, character,\
                    device = 'cpu', quantize = True):
 
     converter = CTCLabelConverter(character, separator_list, dict_list)
-    print(converter.character)
-    print(len(converter.character))
     num_class = len(converter.character)
 
     if recog_network == 'generation1':

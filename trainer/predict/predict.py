@@ -7,5 +7,7 @@ if __name__ == '__main__':
         user_network_directory='custom_EasyOCR/user_network',
         recog_network='custom_example'
     )
-    image = 'obj446_ufms.jpg'
+    image = 'obj446_date.jpg'
     result = reader.readtext(image)
+    for r in result:
+        print(r[1] + ' ')
